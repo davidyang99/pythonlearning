@@ -1,0 +1,201 @@
+$ git status
+$ git add menu.txt
+$ git commit -m "First commit!"
+$ git log
+$ git -cat-file -p  5dee7f6613a287c59f419514d24812968986a290
+$ git branch
+* master
+
+$ git branch lisa
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (master)
+$ git branch
+  lisa
+* master
+
+
+$ git branch
+  lisa
+* master
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (master)
+$ git checkout lisa
+Switched to branch 'lisa'
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (lisa)
+$ git branch
+* lisa
+  master
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (lisa)
+$ git tag
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (lisa)
+$ git tag dinner
+
+yangd@5CG8265D86 MINGW64 /c/cookbook (lisa)
+$ git tag
+dinner
+
+yangd@5CG8265D86 MINGW64 /c/git (master)
+$ git clone https://github.com/davidyang99/Android.git
+Cloning into 'Android'...
+remote: Enumerating objects: 138, done.
+remote: Total 138 (delta 0), reused 0 (delta 0), pack-reused 138
+Receiving objects: 100% (138/138), 124.98 KiB | 1.76 MiB/s, done.
+Resolving deltas: 100% (20/20), done.
+
+yangd@5CG8265D86 MINGW64 /c/git (master)
+$ git remote -v
+origin  https://github.com/davidyang99/Android.git (fetch)
+origin  https://github.com/davidyang99/Android.git (push)
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (master)
+$ git remote show
+origin
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (master)
+$ git branch -av
+* master                a607c65 removed a building from the building list variable
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master a607c65 removed a building from the building list variable
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (master)
+$ git checkout mobilefunctions
+error: pathspec 'mobilefunctions' did not match any file(s) known to git
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (master)
+$ git branch mlfunctions
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (master)
+$ git checkout mlfunctions
+Switched to branch 'mlfunctions'
+
+yangd@5CG8265D86 MINGW64 /c/git/android/speechToText/app/src/main/java/com/maxmind (mlfunctions)
+$ git push --set-upstream origin mlfunctions
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 803 bytes | 803.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: Create a pull request for 'mlfunctions' on GitHub by visiting:
+remote:      https://github.com/davidyang99/Android/pull/new/mlfunctions
+remote:
+To https://github.com/davidyang99/Android.git
+ * [new branch]      mlfunctions -> mlfunctions
+Branch 'mlfunctions' set up to track remote branch 'mlfunctions' from 'origin'.
+
+yangd@5CG8265D86 MINGW64 /c/git/android (mlfunctions)
+$ git branch -av
+  master                     a607c65 removed a building from the building list variable
+* mlfunctions                dcf3c64 add a comment
+  remotes/origin/HEAD        -> origin/master
+  remotes/origin/master      a607c65 removed a building from the building list variable
+  remotes/origin/mlfunctions dcf3c64 add a comment
+
+yangd@5CG8265D86 MINGW64 /c/git/android (mlfunctions)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+yangd@5CG8265D86 MINGW64 /c/git/android (master)
+$ git checkout mlfunctions
+Switched to branch 'mlfunctions'
+Your branch is up to date with 'origin/mlfunctions'.
+
+yangd@5CG8265D86 MINGW64 /c/git/android (mlfunctions)
+$ git init pythonlearning
+Initialized empty Git repository in C:/Users/yangd/source/repos/pythonlearning/.git/
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos
+$ cd pythonlearning
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos/pythonlearning (master)
+$ git add .
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/DataStructure-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/First model-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/Trainning-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/Untitled-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/pythonTypes-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DataStructure.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in First model.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Trainning.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Untitled.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in pythonTypes.ipynb.
+The file will have its original line endings in your working directory
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos/pythonlearning (master)
+$ git commit -a
+[master (root-commit) f843c2f] first load with some files I did
+ Committer: David Yang <David.Yang@bgis.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 1930 insertions(+)
+ create mode 100644 .ipynb_checkpoints/DataStructure-checkpoint.ipynb
+ create mode 100644 .ipynb_checkpoints/First model-checkpoint.ipynb
+ create mode 100644 .ipynb_checkpoints/Trainning-checkpoint.ipynb
+ create mode 100644 .ipynb_checkpoints/Untitled-checkpoint.ipynb
+ create mode 100644 .ipynb_checkpoints/pythonTypes-checkpoint.ipynb
+ create mode 100644 DataStructure.ipynb
+ create mode 100644 First model.ipynb
+ create mode 100644 Trainning.ipynb
+ create mode 100644 Untitled.ipynb
+ create mode 100644 pythonTypes.ipynb
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos/pythonlearning (master)
+
+#### create a SSH files in c:/users/yangd/.SSH  through command line 
+#### Open git bash (Use the Windows search. To find it, type "git bash") or the Mac Terminal. Pro Tip: You can use any *nix based command prompt (but not the default Windows Command Prompt!)
+#### Type cd ~/.ssh. This will take you to the root directory for Git (Likely C:\Users\[YOUR-USER-NAME]\.ssh\ on Windows)
+#### Within the .ssh folder, there should be these two files: id_rsa and id_rsa.pub. These are the files that tell your computer how to communicate with GitHub, BitBucket, or any other Git based service. Type ls to see a directory listing. If those two files don't show up, proceed to the next step. NOTE: Your SSH keys must be named id_rsa and id_rsa.pub in order for Git, GitHub, and BitBucket to recognize them by default.
+#### To create the SSH keys, type ssh-keygen -t rsa -C "your_email@example.com". This will create both id_rsa and id_rsa.pub files.
+#### Now, go and open id_rsa.pub in your favorite text editor (you can do this via Windows Explorer or the OSX Finder if you like, tpying open . will open the folder).
+#### Copy the contents--exactly as it appears, with no extra spaces or lines--of id_rsa.pub and paste it into GitHub and/or BitBucket under the Account Settings > SSH Keys. NOTE: I like to give the SSH key a descriptive name, usually with the name of the workstation I'm on along with the date.
+#### Now that you've added your public key to Github and/or BitBucket, try to git push again and see if it works. It should!
+
+#### git remote add origin git@github.com:davidyang99/pythonlearning.git
+
+$ git push origin master
+Enter passphrase for key '/c/Users/yangd/.ssh/id_rsa':
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 17.20 KiB | 1.72 MiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/davidyang99/pythonlearning/pull/new/master
+remote:
+To github.com:davidyang99/pythonlearning.git
+ * [new branch]      master -> master
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos/pythonlearning (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+yangd@5CG8265D86 MINGW64 /c/users/yangd/source/repos/pythonlearning (master)
